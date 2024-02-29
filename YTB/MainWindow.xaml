@@ -44,6 +44,8 @@
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="352,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="88,366,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="352,366,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
-        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="88,187,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Background="{x:Null}"/>
+        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="88,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="246" Background="{x:Null}" FontSize="9"/>
+        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="352,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="246" Background="{x:Null}" FontSize="9"/>
+        <Image HorizontalAlignment="Left" Height="17" Margin="10,0,0,0" VerticalAlignment="Center" Width="20" Source="/img/hamburger-menu-icon-transparent-3.png"/>
     </Grid>
 </Window>

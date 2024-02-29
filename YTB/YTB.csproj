@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="img\default.png" />
+    <None Remove="img\hamburger-menu-icon-transparent-3.png" />
     <None Remove="img\lupa.png" />
     <None Remove="img\Miniatura.png" />
     <None Remove="img\ytblogo.png" />
@@ -16,6 +17,9 @@
 
   <ItemGroup>
     <Content Include="img\default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\hamburger-menu-icon-transparent-3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="img\lupa.png">
