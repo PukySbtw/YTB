@@ -6,7 +6,30 @@
         xmlns:local="clr-namespace:YTB"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="#FF212121">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="7.3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="24" Margin="44,0,0,0" VerticalAlignment="Center" Width="100" Source="/img/ytblogo.png" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Domů" VerticalAlignment="Top" Height="18" Width="51" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,40,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Shorts" VerticalAlignment="Top" Height="20" Width="55" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,65,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Odběry" VerticalAlignment="Top" Height="22" Width="61" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,108,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Vy" VerticalAlignment="Top" Height="20" Width="21" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,133,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Historie" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="256" Height="21" Foreground="#FF3D3D3D" BorderBrush="#FF3D3D3D" Background="#FF181818"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="457,0,0,0" VerticalAlignment="Center" Width="21" Source="/img/lupa.png"/>
+        <Label Content="Prozkoumat" HorizontalAlignment="Left" Margin="7,0,0,0" Grid.Row="1" VerticalAlignment="Center" Foreground="White" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,210,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Trendy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,235,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hudba" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,260,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Filmy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,310,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Zprávy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,285,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hry" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,335,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Sport" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,360,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Podcasty" VerticalAlignment="Top" Height="17" Width="75" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
     </Grid>
 </Window>
