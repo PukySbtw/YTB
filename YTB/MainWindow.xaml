@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:YTB"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="850">
-    <Grid x:Name="mainGrid" Background="#FF212121" MouseEnter="mainGrid_MouseEnter" MouseLeave="mainGrid_MouseLeave" KeyDown="mainGrid_KeyDown" Focusable="True" Margin="0,0,-21,-106">
+    <Grid x:Name="mainGrid" Background="#FF212121" MouseEnter="mainGrid_MouseEnter" MouseLeave="mainGrid_MouseLeave" Margin="0,0,-21,-106">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="7.3*" />
@@ -33,7 +33,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="21,360,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Podcasty" VerticalAlignment="Top" Height="17" Width="75" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="88,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="352,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
-        <Image Grid.Column="1" x:Name="fotka" Height="139" Margin="352,219,168,0" Grid.Row="1" VerticalAlignment="Top" Source="/img/Miniatura.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="352,219,168,0" Grid.Row="1" VerticalAlignment="Top" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="88,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="652,0,0,0" VerticalAlignment="Center" Width="42" Source="/img/default.png"/>
         <Label Grid.Column="1" Content="Classic Blues Music best Songs - Excellent" HorizontalAlignment="Left" Margin="352,156,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Height="27" Foreground="White"/>
