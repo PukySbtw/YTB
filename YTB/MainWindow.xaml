@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YTB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF212121">
+        Title="MainWindow" Height="500" Width="850">
+    <Grid x:Name="mainGrid" Background="#FF212121" MouseEnter="mainGrid_MouseEnter" MouseLeave="mainGrid_MouseLeave" KeyDown="mainGrid_KeyDown" Focusable="True" Margin="0,0,-21,-106">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="7.3*" />
@@ -21,11 +21,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="21,65,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Odběry" VerticalAlignment="Top" Height="22" Width="61" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,108,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Vy" VerticalAlignment="Top" Height="20" Width="21" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,133,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Historie" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hledat" VerticalAlignment="Center" Width="256" Height="21" Foreground="#FF3D3D3D" BorderBrush="#FF3D3D3D" Background="#FF181818"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="457,0,0,0" VerticalAlignment="Center" Width="21" Source="/img/lupa.png"/>
-        <Label Content="Prozkoumat" HorizontalAlignment="Left" Margin="7,0,0,0" Grid.Row="1" VerticalAlignment="Center" Foreground="White" FontFamily="Arial"/>
+        <TextBox Grid.Column="1" x:Name="searchbar" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hledat" VerticalAlignment="Center" Width="256" Height="21" Foreground="#FF3D3D3D" BorderBrush="#FF3D3D3D" Background="#FF181818"/>
+
+        <Label Content="Prozkoumat" Margin="0,159,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" HorizontalAlignment="Center" Width="74"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,210,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Trendy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
-        <TextBlock HorizontalAlignment="Left" Margin="21,235,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hudba" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,235,9,0" Grid.Row="1" TextWrapping="Wrap" Text="Hudba" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,260,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Filmy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="21,310,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Zprávy" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="22,285,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hry" VerticalAlignment="Top" Height="17" Width="69" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
@@ -33,7 +33,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="21,360,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Podcasty" VerticalAlignment="Top" Height="17" Width="75" Foreground="White" FontSize="16" FontFamily="Sitka Small"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="88,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="352,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="352,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
+        <Image Grid.Column="1" x:Name="fotka" Height="139" Margin="352,219,168,0" Grid.Row="1" VerticalAlignment="Top" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="139" Margin="88,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Source="/img/Miniatura.png"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="652,0,0,0" VerticalAlignment="Center" Width="42" Source="/img/default.png"/>
         <Label Grid.Column="1" Content="Classic Blues Music best Songs - Excellent" HorizontalAlignment="Left" Margin="352,156,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Height="27" Foreground="White"/>
@@ -44,8 +44,13 @@
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="352,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="88,366,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
         <Label Grid.Column="1" Content="LOVE BLUES SONGS" HorizontalAlignment="Left" Margin="352,366,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Foreground="#FF8C8C8C" FontSize="10"/>
-        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="88,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="246" Background="{x:Null}" FontSize="9"/>
-        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="352,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="246" Background="{x:Null}" FontSize="9"/>
+        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Right" Foreground="#FF8C8C8C" Margin="0,183,432,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Background="{x:Null}" FontSize="9"/>
+        <Label Grid.Column="1" Content="1,6 mil. zhlédnutí před 3 měsíci" HorizontalAlignment="Left" Foreground="#FF8C8C8C" Margin="352,183,0,0" Grid.Row="1" VerticalAlignment="Top" Width="246" Background="{x:Null}" FontSize="9"/>
         <Image HorizontalAlignment="Left" Height="17" Margin="10,0,0,0" VerticalAlignment="Center" Width="20" Source="/img/hamburger-menu-icon-transparent-3.png"/>
+        <Button Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="474,0,0,0" VerticalAlignment="Center" BorderBrush="{x:Null}" Width="24" Height="17">
+            <Button.Background>
+                <ImageBrush ImageSource="/img/lupa.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
